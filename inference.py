@@ -26,8 +26,6 @@ import torch.nn as nn
 from torch.optim import lr_scheduler
 from torch.utils.data import Dataset, DataLoader
 
-from iterstrat.ml_stratifiers import MultilabelStratifiedKFold
-
 ## Transforemr Import
 from transformers import AutoTokenizer, AutoModel, AdamW, AutoConfig, DataCollatorWithPadding
 
