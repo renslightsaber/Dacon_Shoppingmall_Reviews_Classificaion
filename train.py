@@ -47,11 +47,6 @@ warnings.filterwarnings("ignore")
 # For descriptive error messages
 os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 
-
-
-
-
-
 from dataloader import *
 from new_trainer import *
 from model import *
@@ -121,7 +116,7 @@ def main(config):
     print(test.head())
     
     ### K Fold
-    skf =  StratifiedKFold(n_splits=config['n_folds'], shuffle=True, random_state=config['seed'])
+    skf =  StratifiedKFold(n_splits=config.n_folds, shuffle=True, random_state=config.seed)
 
     for fold, ( _, val_) in enumerate(skf.split(X=train, y=train.new_target)):
         train.loc[val_ , "kfold"] = int(fold)
