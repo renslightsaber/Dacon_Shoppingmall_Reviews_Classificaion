@@ -170,17 +170,17 @@ def main(config):
     print(ss.head())
     print()
     print("Value Counts()")
-    print(ss.Target.value_counts())
+    print(ss.target.value_counts())
     print()
     
     ## Encoded Target을 원래대로 돌립니다. 
-    ss['target'] = ss.Target.apply(lambda x: train_inverse[x])
+    ss['target'] = ss.target.apply(lambda x: train_inverse[x])
     ## 확인
     print(ss.shape)
     print(ss.head())
     print()
     print("Value Counts()")
-    print(ss.Target.value_counts())
+    print(ss.target.value_counts())
     print()
     
     
