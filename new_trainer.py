@@ -39,8 +39,8 @@ def train_one_epoch(model, dataloader, loss_fn, optimizer, device, epoch, n_clas
 
     ################ torchmetrics: initialize metric #########################
 
-    metric_acc = torchmetrics.Accuracy(task='multiclass', average = 'macro', num_classes=n_classes,).to(config['device'])
-    metric_f1 = torchmetrics.F1Score(task="multiclass", average = 'macro', num_classes=n_classes,).to(config['device'])
+    metric_acc = torchmetrics.Accuracy(task='multiclass', average = 'macro', num_classes=n_classes,).to(device)
+    metric_f1 = torchmetrics.F1Score(task="multiclass", average = 'macro', num_classes=n_classes,).to(device)
     
     ############################################################################
 
@@ -120,8 +120,8 @@ def valid_one_epoch(model, dataloader, loss_fn, optimizer, device, epoch, n_clas
 
     ################ torchmetrics: initialize metric #########################
 
-    metric_acc = torchmetrics.Accuracy(task='multiclass', average = 'macro', num_classes=n_classes).to(config['device'])
-    metric_f1 = torchmetrics.F1Score(task="multiclass", average = 'macro', num_classes=n_classes).to(config['device'])
+    metric_acc = torchmetrics.Accuracy(task='multiclass', average = 'macro', num_classes=n_classes).to(device)
+    metric_f1 = torchmetrics.F1Score(task="multiclass", average = 'macro', num_classes=n_classes).to(device)
     
     ############################################################################
     
@@ -186,8 +186,18 @@ def valid_one_epoch(model, dataloader, loss_fn, optimizer, device, epoch, n_clas
   
   
 ################### Run Train ###################
-def run_train(model, model_save, train_loader, valid_loader, loss_fn, optimizer, device, n_classes, fold, scheduler = None, grad_clipping = False, n_epochs=5):
-    #, print_iter=1, early_stop=1):
+def run_train(model, 
+              model_save, 
+              train_loader, 
+              valid_loader, 
+              loss_fn, 
+              optimizer, 
+              device, 
+              n_classes, 
+              fold, 
+              scheduler = None, 
+              grad_clipping = False, 
+              n_epochs=5):
     
     if torch.cuda.is_available():
         print("INFO: GPU - {}\n".format(torch.cuda.get_device_name()))
