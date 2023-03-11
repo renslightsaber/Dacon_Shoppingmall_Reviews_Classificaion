@@ -1,4 +1,4 @@
-# [공사중] How to train or inference in CLI? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Yk7dF2YpVsYV6XRJWsM1HKWoWXXKRT1T?usp=sharing)
+# How to train or inference in CLI? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Yk7dF2YpVsYV6XRJWsM1HKWoWXXKRT1T?usp=sharing)
 
 #### You can check Jupyter Notebook Version at [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kdBMySPzX4wxI_I9xJzguFKxx99HBz-T?usp=sharing) 
  
@@ -31,7 +31,7 @@ $ python train.py --base_path './data/' \
                   --n_folds 5 \
                   --n_epochs 5 \
                   --device 'cuda' \
-                  --train_bs 32
+                  --train_bs 64
 
 ```
 - `base_path` : Data가 저장된 경로 (Default: `./data/`)
@@ -66,7 +66,7 @@ $ python inference.py --base_path './data/' \
                       --n_folds 5 \
                       --n_epochs 5 \
                       --device 'cuda' \
-                      --train_bs 32 
+                      --train_bs 64 
 
 ```
 - `base_path` : Data가 저장된 경로 (Default: `./data/`)
