@@ -28,7 +28,8 @@
 
 ## Code on this Repository is developed!
 - Period of this competition was 6 months ago.
-- Original Code(=Colab ipynb link) will be attached soon!
+- [A.RYANG](https://github.com/nomaday)'s Original Code at [here](https://github.com/nomaday/Portfolio/blob/main/shoppingmall-review/notebook.ipynb)
+- My Original Code(Colab) is at [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1uSIMNUynO6H34LhwXFoOwxOeoxuE8_c_?usp=sharing) 
 
  
 ## How to train or inference in CLI? 
