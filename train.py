@@ -66,25 +66,21 @@ def define():
     p.add_argument('--base_path', type = str, default = "./data/", help="Data Folder Path")
     p.add_argument('--model_save', type = str, default = "./models/", help="Data Folder Path")
     p.add_argument('--sub_path', type = str, default = "./submission/", help="Data Folder Path")
-    
-    p.add_argument('--add_speaker_info', type = bool, default = True, help=" Speaker.upper() + Utterance")
-    p.add_argument('--make_essay_option', type = bool, default = True, help="concatenate some Utterances")
-    p.add_argument('--make_essay_sentences', type = int, default = 4, help="Number of previous Utterances to concatenate")
    
-    p.add_argument('--model', type = str, default = 'tae898/emoberta-base', help="HuggingFace Pretrained Model")
+    p.add_argument('--model', type = str, default = 'beomi/KcELECTRA-base', help="HuggingFace Pretrained Model")
     
     p.add_argument('--n_folds', type = int, default = 5, help="Folds")
     p.add_argument('--n_epochs', type = int, default = 5, help="Epochs")
     
     p.add_argument('--seed', type = int, default = 2022, help="Seed")
-    p.add_argument('--train_bs', type = int, default = 16, help="Batch Size")
+    p.add_argument('--train_bs', type = int, default = 64, help="Batch Size")
     
     p.add_argument('--max_length', type = int, default = 256, help="Max Length")
     
     p.add_argument('--ratio', type = float, default = 0.7, help="Ratio of Train, Valid")
     
     p.add_argument('--T_max', type = int, default = 500, help="T_max")
-    p.add_argument('--learning_rate', type = float, default = 1e-5, help="lr")
+    p.add_argument('--learning_rate', type = float, default = 5e-5, help="lr")
     p.add_argument('--min_lr', type = float, default = 1e-6, help="Min LR")
     p.add_argument('--weight_decay', type = float, default = 1e-6, help="Weight Decay")
 
