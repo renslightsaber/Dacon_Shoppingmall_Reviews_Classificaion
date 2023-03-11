@@ -59,7 +59,7 @@ def set_seed(seed=42):
     
     
 ############# Data ################
-def dacon_competition_data( base_path = config['base_path']):
+def dacon_competition_data( base_path ):
 
     train = pd.read_csv(base_path + 'train.csv')
     test = pd.read_csv(base_path + 'test.csv')
