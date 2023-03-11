@@ -1,4 +1,4 @@
-# [[공사 중][Dacon] 쇼핑몰 리뷰 분류 평점 경진대회](https://dacon.io/competitions/official/235938/overview/description)
+# [[Dacon] 쇼핑몰 리뷰 분류 평점 경진대회](https://dacon.io/competitions/official/235938/overview/description)
  Competition URK is closed, and we don't know why.
 
 <img src="/imgs/1658307451650935.png" width="99%"></img>
