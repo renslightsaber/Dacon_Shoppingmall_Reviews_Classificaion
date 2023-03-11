@@ -73,7 +73,7 @@ def test_func(model, dataloader, device):
     
     
 ################## Trained Model paths #################### 
-def trained_model_paths(n_folds = config['n_folds'], model_save = config['model_save']):
+def trained_model_paths(n_folds, model_save):
     print("n_folds: ",n_folds )
 
     model_paths_f1 = []
@@ -82,7 +82,9 @@ def trained_model_paths(n_folds = config['n_folds'], model_save = config['model_
 
     print(len(model_paths_f1))
     print(model_paths_f1)
+    
     return model_paths_f1
+  
     
     
 ############## inference function ####################    
