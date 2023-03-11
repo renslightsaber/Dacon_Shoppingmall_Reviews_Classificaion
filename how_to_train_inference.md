@@ -1,6 +1,6 @@
-# [공사중] How to train or inference in CLI? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1EPaUyBIP4VER23AKPoLBPjW-Gdn8Bv6b?usp=share_link)
+# [공사중] How to train or inference in CLI? [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Yk7dF2YpVsYV6XRJWsM1HKWoWXXKRT1T?usp=sharing)
 
-#### You can check Jupyter Notebook Version at [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mB05pvu7d83KQX6dyYlj4jxdeUSEt7pJ?usp=sharing) 
+#### You can check Jupyter Notebook Version at [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kdBMySPzX4wxI_I9xJzguFKxx99HBz-T?usp=sharing) 
  
 
 ## install
@@ -37,7 +37,7 @@ $ python train.py --base_path './data/' \
 - `base_path` : Data가 저장된 경로 (Default: `./data/`)
 - `sub_path`  : `submission.csv` 제출하는 경로
 - `model_save`: 학습된 모델이 저장되는 경로
-- `model`: Huggingface의 Pratrained Model (Default: `"beomi/KcELECTRA-base"`)
+- `model`: Huggingface Pratrained Model (Default: `"beomi/KcELECTRA-base"`)
 - `n_folds`  : Fold 수
 - `n_epochs` : Epoch
 - `seed` : Random Seed (Default: 2022)
@@ -72,7 +72,7 @@ $ python inference.py --base_path './data/' \
 - `base_path` : Data가 저장된 경로 (Default: `./data/`)
 - `sub_path`  : `submission.csv` 제출하는 경로
 - `model_save`: 학습된 모델이 저장되는 경로
-- `model`: Huggingface의 Pratrained Model (Default: `"monologg/kobigbird-bert-base"`)
+- `model`: train했을 때의 Huggingface Pratrained Model (Default: `"beomi/KcELECTRA-base"`)
 - `n_folds`  : `train.py`에서 진행항 KFold 수
 - `n_epochs` : train했을 때의 Epoch 수 (submission 파일명에 사용)  
 - `seed` : Random Seed (Default: 2022)
