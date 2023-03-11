@@ -74,7 +74,7 @@ $ python inference.py --base_path './data/' \
 - `model_save`: 학습된 모델이 저장되는 경로
 - `model`: train했을 때의 Huggingface Pratrained Model (Default: `"beomi/KcELECTRA-base"`)
 - `n_folds`  : `train.py`에서 진행항 KFold 수
-- `n_epochs` : train했을 때의 Epoch 수 (submission 파일명에 사용)  
+- `n_epochs` : train 했을 때의 Epoch 수 (submission 파일명에 사용)  
 - `seed` : Random Seed (Default: 2022)
 - `train_bs` : Batch Size (Default: 16) 
 - `max_length` : Max Length (Default: 128) for HuggingFace Tokenizer
