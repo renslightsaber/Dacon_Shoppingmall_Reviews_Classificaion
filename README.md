@@ -32,7 +32,7 @@
 
  
 ## How to train or inference in CLI? 
-[Check Here](https://github.com/renslightsaber/Dacon_Speakers_Emotion_Recognition/blob/main/how_to_train_inference.md) 
+[Check Here](https://github.com/renslightsaber/Dacon_Shoppingmall_Reviews_Classificaion/blob/main/how_to_train_inference.md) 
 
  
 ## Certificate of [A.RYANG](https://github.com/nomaday)'s Prize
