@@ -1,11 +1,11 @@
 # [[Dacon] 쇼핑몰 리뷰 분류 평점 경진대회](https://dacon.io/competitions/official/235938/overview/description)
- Competition URK is closed, and we don't know why.
+ Competition URL is closed, and we don't know why.
 
 <img src="/imgs/1658307451650935.png" width="99%"></img>
 
 ## Competition Info
  - Period: 2022.07.11 - 2022.08.05
- - Joined as: `개인(Personal)`
+ - Joined as: `Personal(개인)`
  - In Cooperation with : 🏅[A.RYANG](https://github.com/nomaday) (-> She's my Best student)
  - TASK: `Text Classification`
  - Evaluation Metric: `Accuracy`
